@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo"><h2>My Portfolio</h2></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#resume">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="header-container">
+      <h1>Hello, I'm Motunrayo Adeyemo</h1>
+      <p>
+        A passionate Computer Engineering student driven by problem-solving and
+        software development.
+      </p>
+      <img src="Images/laptop_img.png" alt="My image" class="profile-img" />
+    </header>
+
+    <section id="resume" class="resume-container">
+      <h2>My Experience and Education</h2>
+
+      <div class="cv-item">
+        <h3>Brand Design & Co-Founder</h3>
+        <h4><b>SmartAR Tailor (Techspire) | May 2025 - Present</b></h4>
+        <p>
+          I am currently co-founding SmartAR Tailor, an augmented reality
+          fashion solution. <p>I designed the company's visual identity and logo to
+          translate our product vision into clear brand assets, while actively
+          collaborating with our developers to ensure our business goals align
+          perfectly with our technical milestones.</p>
+        </p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Project Leadership & Data Management</h3>
+        <h4><b>Academic & Web Projects</b></h4>
+        <p>
+          I thrive in hands-on technical environments. Recently, I led a team and supervised team members in
+          data collection strategies and gathering RF readings from
+          cellular masts. <p>Additionally, I served as the Project Data
+          Manager for an Emergency Contact Directory Web App, where I sourced
+          and cleaned all integrated data and collaborated closely with
+          developers to troubleshoot the final build.</p>
+        </p>
+      </div>
+
+      <div class="cv-item">
+        <h3>Computer Engineering Student</h3>
+        <h4>
+          <b>Federal University of Technology, Akure (FUTA) | 2023 - Present</b>
+        </h4>
+        <p>
+          My academic foundation is built on programming, Artificial
+          Intelligence, and electronics. To push my practical skills further, I
+          recently completed an intensive 4-week Python and Machine Learning
+          program with AI Beam Builders, and I regularly participate in Google
+          Developers Group workshops to stay current on AI and web technologies.
+          <p>I am actively seeking an internship to apply my growing frontend
+          development and data skills to real-world challenges.</p>
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-container">
+      <h2>Gallery - Life, Friends & Experiences</h2>
+      <h4>A glimpse into my world.</h4>
+
+      <div class="image-grid">
+        <div class="gallery-card">
+          <div class="slider-container" onclick="nextImage(this)">
+            <img
+              src="Images/mypic0.jpeg"
+              alt="My Picture"
+              class="gallery-img active"
+              height="300px"
+            />
+            <img src="Images/Mypic.jpeg" alt="My Picture" class="gallery-img" />
+            <img
+              src="Images/Mypic2.jpeg"
+              alt="My Picture 2"
+              class="gallery-img"
+            />
+            <img
+              src="Images/Mypic3.jpeg"
+              alt="My Picture 3"
+              class="gallery-img"
+            />
+            <div class="click-hint">Tap for more</div>
+          </div>
+          <p>My pictures taken at different events</p>
+        </div>
+
+        <div class="gallery-card">
+          <div class="slider-container" onclick="nextImage(this)">
+            <img
+              src="Images/Techspire1.jpeg"
+              alt="Techspire Team 1"
+              class="gallery-img active"
+            />
+
+            <img
+              src="Images/Hack2.jpeg"
+              alt="Techspire Team 2"
+              class="gallery-img"
+            />
+
+            <img
+              src="Images/Hackaton1.jpeg"
+              alt="Techspire Team 3"
+              class="gallery-img"
+            />
+            <div class="click-hint">Tap for more</div>
+          </div>
+          <p>The Techspire Team</p>
+        </div>
+
+        <div class="gallery-card">
+          <img
+            src="Images/SIUonCampus.jfif"
+            alt="Techspire won 2nd place in the WEMA6.0 hackathon"
+            class="gallery-img"
+          />
+          <p>SIU on Campus Student Club (FUTA)</p>
+        </div>
+
+        <div class="gallery-card">
+          <img
+            src="Images/GDG2.jpeg"
+            alt="Group photo with friends from Google Developers Group"
+            class="gallery-img"
+          />
+          <p>Google Developers Group</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="thank-you-section">
+      <div class="top-right-text">Come back soon</div>
+
+      <div class="thank-you-content">
+        <h2>Thank You</h2>
+        <p>for visiting my portfolio</p>
+
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/motunrayo-adeyemo"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://wa.me/2349135024683" target="_blank" title="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a href="tel:+2349135024683" title="Call Me"
+            ><i class="fas fa-phone"></i
+          ></a>
+          <a href="https://github.com/Rayno-0x" target="_blank" title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+
+      <a href="#home" class="back-to-home">back to home page</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

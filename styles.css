@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333333; /* Default text color for the rest of the page */
+  background-color: #ffffff;
+}
+
+.navbar {
+  background-color: #162e5f;
+  color: white;
+  display: flex; /* Aligns items in a row */
+  justify-content: space-between; /* Pushes logo left, links right */
+  align-items: center; /* Centers items vertically */
+  padding: 1.5rem 5%; /* Top/Bottom and Left/Right padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none; /* Removes bullet points */
+  display: flex;
+  gap: 2rem; /* Space between links */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underline */
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #a8c1ff; /* Slight color change on hover */
+}
+
+/* --- Header / Hero Section --- */
+.header-container {
+  background-color: #0b1933; /* The very dark blue from the image */
+  color: white;
+  padding: 8rem 5%; /* Large padding creates that big "Hero" look */
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  max-width: 800px; /* Keeps the text from stretching too far */
+}
+
+.header-container p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  color: #e0e0e0; /* Slightly muted white for readability */
+}
+
+.profile-img {
+  position: absolute; /* Lifts it out of the normal document flow */
+  align-content: center;
+  right: 8rem; /* Pins it to the right side of the main area */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden;
+  border: 5px solid var(--brand-color); /* Adds a border that matches the brand color */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Resume Section --- */
+.resume-container {
+  padding: 5rem 5%;
+  background-color: #ffffff;
+}
+
+.resume-container h2 {
+  color: #162e5f; /* Tying the brand color into the headings */
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cv-item {
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto; /* Centers the CV items */
+  padding-left: 1.5rem;
+  border-left: 4px solid #162e5f; /* A nice vertical line for styling */
+}
+
+.cv-item h3 {
+  font-size: 1.3rem;
+  color: #0b1933;
+}
+
+.cv-item h4 {
+  color: #666666;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+/* --- Gallery Section --- */
+.gallery-container {
+  padding: 5rem 5%;
+  background-color: #f4f7f6;
+  text-align: center;
+}
+
+.gallery-container h2 {
+  color: #162e5f;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-container h4 {
+  color: #555555;
+  margin-bottom: 3rem;
+  font-weight: normal;
+}
+
+/* The Grid Layout */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* This creates exactly 2 equal columns */
+  gap: 2rem; /* Space between the cards */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* The Bordered Box */
+.gallery-card {
+  border: 2px solid #162e5f; /* Deep blue border to match your theme */
+  padding: 1rem; /* Space between the border and the image */
+  border-radius: 8px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Uniform Image Sizing */
+.gallery-img {
+  width: 100%;
+  height: 300px; /* Forces all images to be the exact same height */
+  object-fit: cover; /* Ensures images don't stretch weirdly */
+  border-radius: 4px;
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+.gallery-card p {
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: #0b1933;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.thank-you-section {
+  background-color: #0b1933;
+  color: #ffffff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  position: relative;
+}
+
+.top-right-text {
+  align-self: flex-end;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #a8c1ff; /* Light blue accent */
+  margin-top: 1rem;
+}
+
+.thank-you-content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.thank-you-content h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.thank-you-content p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #e0e0e0;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #a8c1ff; /* Turns light blue when hovered */
+  transform: translateY(-5px); /* Makes the icon pop up slightly */
+}
+
+/* Back to Home Link */
+.back-to-home {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-to-home:hover {
+  color: #a8c1ff;
+}
+
+/* --- Clickable Image Slider --- */
+.slider-container {
+  position: relative;
+  width: 100%;
+  cursor: pointer; /* Changes the mouse to a pointing hand */
+}
+
+/* Hide all images in the slider by default */
+.slider-container .gallery-img {
+  display: none;
+  margin-bottom: 0; /* Remove old margin so the hint box aligns perfectly */
+}
+
+/* Only show the image with the 'active' class */
+.slider-container .gallery-img.active {
+  display: block;
+  animation: fadeIn 0.4s ease-in-out; /* Smooth transition */
+}
+
+.click-hint {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(11, 25, 51, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider-container {
+  margin-bottom: 1rem;
+}
+
+/*Mobile Responsiveness*/
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navbar ul {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+    padding: 6rem 5% 4rem 5%;
+    text-align: center;
+  }
+
+  .header-container img {
+    position: static;
+    margin: 2rem auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .header-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+
+    font-size: 2.2rem;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thank-you-content h2 {
+    font-size: 3rem;
+  }
+
+  .social-icons {
+    gap: 1.2rem;
+  }
+}
